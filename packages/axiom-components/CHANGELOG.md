@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.7.0](https://github.com/larister/axiom/compare/@brandwatch/axiom-components@5.6.0...@brandwatch/axiom-components@5.7.0) (2018-12-03)
+
+
+### Bug Fixes
+
+* **lint:** Fixed a couple of linting issues ([165b706](https://github.com/larister/axiom/commit/165b706))
+
+
+### Features
+
+* **IconButton:** Add iconColor and buttonStyle props to IconButton ([136d3cc](https://github.com/larister/axiom/commit/136d3cc))
+
+
+
+
+
 # [5.6.0](https://github.com/lpoulter/axiom/compare/@brandwatch/axiom-components@5.5.0...@brandwatch/axiom-components@5.6.0) (2018-11-16)
 
 
