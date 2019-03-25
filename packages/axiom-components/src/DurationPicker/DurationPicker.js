@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import { Duration } from 'luxon';
 import omit from 'lodash.omit';
 import Dropdown from '../Dropdown/Dropdown';
@@ -73,7 +73,7 @@ const formatTimeUnit = (timeUnit) => {
   return `${timeUnit.slice(0, 1).toUpperCase()}${timeUnit.slice(1)}`;
 };
 
-export default class DurationPicker extends Component {
+export default class DurationPicker extends PureComponent {
   static propTypes = {
     /** Excluded time-unit options */
     excludedOptions: PropTypes.arrayOf(PropTypes.oneOf(validTimeUnits)),
@@ -130,7 +130,10 @@ export default class DurationPicker extends Component {
     this.setState({
       selectedUnit,
       value: durationValue,
-    }, this.onChange);
+    }, () => {
+      this.onChange();
+      this.onBlur();
+    });
   }
 
   onChange() {
