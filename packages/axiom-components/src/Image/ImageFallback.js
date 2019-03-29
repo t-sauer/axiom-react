@@ -49,7 +49,7 @@ export default class ImageFallback extends Component {
     }
   }
 
-  componentWillUpdate(nextProps) {
+  componentDidUpdate(nextProps) {
     if (this.image && nextProps.src !== this.props.src) {
       this.image.src = nextProps.src;
     }
