@@ -30,6 +30,8 @@ export { default as CardImages } from './Card/CardImages';
 export { default as CardList } from './Card/CardList';
 export { default as CheckBox } from './Form/CheckBox';
 export { default as CheckBoxGroup } from './Form/CheckBoxGroup';
+export { default as Chip } from './Chip/Chip';
+export { default as ChipList } from './Chip/ChipList';
 export { default as Cloak } from './Cloak/Cloak';
 export { default as CloakContainer } from './Cloak/CloakContainer';
 export { default as ColorPicker } from './ColorPicker/ColorPicker';

@@ -11,6 +11,7 @@ import Badge from './Components/Badge';
 import Base from './Components/Base';
 import Button from './Components/Button';
 import Card from './Components/Card';
+import Chip from './Components/Chip';
 import Cloak from './Components/Cloak';
 import ColorPicker from './Components/ColorPicker';
 import DataPicker from './Components/DataPicker';
@@ -103,6 +104,10 @@ export default class Documentation extends Component {
             id: 'card-graphic',
             name: 'Card Graphic',
             Component: CardGraphic,
+          }, {
+            id: 'chip',
+            name: 'Chip',
+            Component: Chip,
           }, {
             id: 'cloak',
             name: 'Cloak',

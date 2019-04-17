@@ -15,6 +15,10 @@
 
   --component-line-height: 1rem;
 
+  --component-total-line-height-small: calc(var(--component-line-height) + (var(--component-padding-vertical-small) * 2) + (var(--component-border-width-small) * 2));
+  --component-total-line-height-medium: calc(var(--component-line-height) + (var(--component-padding-vertical-medium) * 2) + (var(--component-border-width-medium) * 2));
+  --component-total-line-height-large: calc(var(--component-line-height) + (var(--component-padding-vertical-large) * 2) + (var(--component-border-width-large) * 2));
+
   --component-border-width-small: 0.0625rem;
   --component-border-width-medium: 0.0625rem;
   --component-border-width-large: 0.125rem;
@@ -23,6 +27,7 @@
 
   --component-border-radius: 0.1875rem;
   --component-border-radius-large: 0.5rem;
+  --component-border-radius-huge: 1.25rem;
 
   --component-padding-vertical-small: calc(var(--spacing-grid-size) - var(--component-border-width-small));
   --component-padding-vertical-medium: calc(calc(var(--spacing-grid-size) * 2) - var(--component-border-width-small));
@@ -68,5 +73,10 @@
    * Shared component variables.
    */
   --cmp-context-tip-edge-to-edge: 0.75rem;
+
+  /**
+   * Used for max-height of a topics container
+   */
+  --component-max-height: 62.5rem;
 }
 /* stylelint-enable */

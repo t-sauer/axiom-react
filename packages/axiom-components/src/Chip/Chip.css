@@ -1,0 +1,116 @@
+.ax-chip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: var(--cmp-inline-spacing);
+  margin-bottom: var(--cmp-inline-spacing);
+  padding: 0;
+  float: left;
+  outline: 0;
+  border-width: var(--component-border-width);
+  border-style: solid;
+  border-radius: var(--component-border-radius-huge);
+  border-color: transparent;
+  background-color: var(--color-ui-white-noise);
+  color: var(--color-ui-carbon);
+  letter-spacing: var(--letter-spacing-loose);
+  text-align: center;
+  line-height: var(--component-line-height);
+  white-space: nowrap;
+  vertical-align: middle;
+  transition-property: background-color, border-color, color;
+  transition-duration: var(--transition-time-base);
+  transition-timing-function: var(--transition-function);
+
+  &:hover {
+    background-color: var(--color-ui-white-noise--dark);
+    cursor: pointer;
+  }
+
+  &[disabled],
+  &[disabled]:hover,
+  &[disabled]:active {
+    cursor: default;
+  }
+
+  &[disabled]:hover {
+    background-color: var(--color-ui-white-noise);
+  }
+}
+
+.ax-chip-metric {
+  margin-right: var(--spacing-grid-size--x1);
+  margin-left: -var(--spacing-grid-size--x1);
+  color: var(--color-theme-text--subtle);
+}
+
+.ax-chip-metric--light {
+  color: var(--color-ui-white);
+}
+
+.ax-chip--active {
+  background-color: var(--color-ui-white);
+  color: var(--color-ui-carbon);
+
+  &:hover {
+    background-color: var(--color-ui-white);
+  }
+}
+
+.ax-chip--active.ax-chip-color--accent {
+  background-color: var(--color-ui-accent);
+  color: var(--color-ui-white);
+
+  &:hover {
+    background-color: var(--color-ui-accent--hover);
+  }
+}
+
+.ax-chip--active.ax-chip-color--highlight { border-color: var(--color-product-highlight); }
+.ax-chip--active.ax-chip-color--success { border-color: var(--color-product-success); }
+.ax-chip--active.ax-chip-color--error { border-color: var(--color-product-error); }
+.ax-chip--active.ax-chip-color--forbidden-planet { border-color: var(--color-product-forbidden-planet); }
+.ax-chip--active.ax-chip-color--tiny-clanger { border-color: var(--color-product-tiny-clanger); }
+.ax-chip--active.ax-chip-color--critical-mass { border-color: var(--color-product-critical-mass); }
+.ax-chip--active.ax-chip-color--fantastic-voyage { border-color: var(--color-product-fantastic-voyage); }
+.ax-chip--active.ax-chip-color--paradise-lost { border-color: var(--color-product-paradise-lost); }
+.ax-chip--active.ax-chip-color--serene-sea { border-color: var(--color-product-serene-sea); }
+.ax-chip--active.ax-chip-color--event-horizon { border-color: var(--color-product-event-horizon); }
+.ax-chip--active.ax-chip-color--electric-dreams { border-color: var(--color-product-electric-dreams); }
+.ax-chip--active.ax-chip-color--outer-limits { border-color: var(--color-product-outer-limits); }
+.ax-chip--active.ax-chip-color--giant-leap { border-color: var(--color-product-giant-leap); }
+.ax-chip--active.ax-chip-color--moon-lagoon { border-color: var(--color-product-moon-lagoon); }
+.ax-chip--active.ax-chip-color--space-invader { border-color: var(--color-product-space-invader); }
+.ax-chip--active.ax-chip-color--extraterrestrial { border-color: var(--color-product-extraterrestrial); }
+.ax-chip--active.ax-chip-color--terra-form { border-color: var(--color-product-terra-form); }
+.ax-chip--active.ax-chip-color--primeval-soup { border-color: var(--color-product-primeval-soup); }
+.ax-chip--active.ax-chip-color--future-shock { border-color: var(--color-product-future-shock); }
+.ax-chip--active.ax-chip-color--sun-maker { border-color: var(--color-product-sun-maker); }
+.ax-chip--active.ax-chip-color--new-horizon { border-color: var(--color-product-new-horizon); }
+.ax-chip--active.ax-chip-color--blast-off { border-color: var(--color-product-blast-off); }
+.ax-chip--active.ax-chip-color--crash-course { border-color: var(--color-product-crash-course); }
+.ax-chip--active.ax-chip-color--solar-rust { border-color: var(--color-product-solar-rust); }
+.ax-chip--active.ax-chip-color--ground-control { border-color: var(--color-product-ground-control); }
+.ax-chip--active.ax-chip-color--space-oddity { border-color: var(--color-product-space-oddity); }
+.ax-chip--active.ax-chip-color--rocky-planet { border-color: var(--color-product-rocky-planet); }
+.ax-chip--active.ax-chip-color--deep-thought { border-color: var(--color-product-deep-thought); }
+.ax-chip--active.ax-chip-color--luna-dust { border-color: var(--color-product-luna-dust); }
+
+.ax-chip-label {
+  margin: 0 var(--spacing-grid-size--x2) 0 var(--spacing-grid-size--x2);
+}
+
+.ax-chip--small {
+  padding: var(--component-padding-vertical-small) var(--component-padding-horizontal-small);
+  font-size: var(--font-size-small);
+}
+
+.ax-chip--medium {
+  padding: var(--component-padding-vertical-medium) var(--component-padding-horizontal-medium);
+  font-size: var(--font-size-medium);
+}
+
+.ax-chip--large {
+  padding: var(--component-padding-vertical-large) var(--component-padding-horizontal-large);
+  font-size: var(--font-size-large);
+}
