@@ -58,7 +58,6 @@ export default class Chip extends Component {
 
   static defaultProps = {
     activeColor: 'accent',
-    borderStyle: 'solid',
     size: 'medium',
   };
 
@@ -87,7 +86,7 @@ export default class Chip extends Component {
     );
 
     const metricClasses = classnames('ax-chip-metric',
-      { 'ax-chip-metric--light': activeColor == 'accent' }
+      { 'ax-chip-metric--light': active && activeColor == 'accent' }
     );
 
     return (

@@ -1,12 +1,9 @@
 .ax-chiplist {
+  display: flex;
+  flex-wrap: wrap;
   margin-top: var(--spacing-grid-size--x2);
   margin-bottom: var(--spacing-grid-size--x2);
   overflow: hidden;
-  &::after {
-    content: '';
-    display: table;
-    clear: both;
-  }
 }
 
 .ax-chiplist-label {
@@ -14,7 +11,7 @@
   align-items: center;
   justify-content: center;
   margin-right: var(--spacing-grid-size--x1);
-  float: left;
+  margin-bottom: var(--cmp-inline-spacing);
   font-weight: var(--font-weight-bold);
   line-height: var(--component-line-height);
 }
