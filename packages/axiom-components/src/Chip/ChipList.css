@@ -20,7 +20,7 @@
 .ax-chiplist--medium,
 .ax-chiplist--large {
   transition-property: max-height, opacity, margin;
-  transition-duration: var(--transition-time-slow);
+  transition-duration: var(--transition-time-fast);
   transition-timing-function: var(--transition-function);
 }
 

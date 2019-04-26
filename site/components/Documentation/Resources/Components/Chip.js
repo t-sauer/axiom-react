@@ -25,16 +25,6 @@ export default class Documentation extends Component {
                 <Chip>Marcus Smart</Chip>
               </ChipList>
             </DocumentationShowCase>
-
-            <DocumentationShowCase centered>
-              <ChipList size={ 'small' }>
-                <Chip active activeColor={ 'event-horizon' } leftIcon={ 'dot' } metric={ '(99%)' }>Terry Rozier</Chip>
-                <Chip active activeColor={ 'blast-off' } leftIcon={ 'dot' } metric={ '(1%)' }>Marcus Morris</Chip>
-                <Chip active activeColor={ 'electric-dreams' } leftIcon={ 'dot' }>Daniel Theis</Chip>
-                <Chip activeColor={ 'future-shock' }>Aron Baynes</Chip>
-                <Chip>Marcus Smart</Chip>
-              </ChipList>
-            </DocumentationShowCase>
           </GridCell>
         </Grid>
 
