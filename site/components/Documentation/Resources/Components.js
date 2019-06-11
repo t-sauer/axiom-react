@@ -48,6 +48,7 @@ import Toggle from './Components/Toggle';
 import Toolbar from './Components/Toolbar';
 import Tooltip from './Components/Tooltip';
 import Transition from './Components/Transition';
+import Tree from './Components/Tree';
 import Typography from './Components/Typography';
 import UsageHint from './Components/UsageHint';
 import Validation from './Components/Validation';
@@ -248,6 +249,10 @@ export default class Documentation extends Component {
             id: 'transition',
             name: 'Transition',
             Component: Transition,
+          }, {
+            id: 'tree',
+            name: 'Tree',
+            Component: Tree,
           }, {
             id: 'typography',
             name: 'Typography',

@@ -72,10 +72,7 @@
   .ax-button--full--large { width: 100%; }
 }
 
-.ax-button--circle-small,
-.ax-button--circle-medium,
-.ax-button--circle-large,
-.ax-button--circle-huge {
+[class*='ax-button--circle'] {
   padding: 0;
   border-radius: 50%;
   line-height: 0;

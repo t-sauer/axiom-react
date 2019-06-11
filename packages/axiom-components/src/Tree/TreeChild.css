@@ -1,0 +1,7 @@
+.ax-tree-child {
+  display: none;
+}
+
+.ax-tree-child--visible {
+  display: block;
+}

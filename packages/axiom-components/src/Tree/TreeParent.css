@@ -1,0 +1,18 @@
+.ax-tree-parent {
+  position: relative;
+}
+
+.ax-tree-parent__button {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+}
+
+.ax-tree-parent__guideline {
+  position: absolute;
+  left: 13px;
+  top: 10px;
+  width: 10px;
+  pointer-events: none;
+}

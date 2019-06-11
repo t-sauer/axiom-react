@@ -1,0 +1,16 @@
+.ax-tree {
+  position: relative;
+  min-height: 100%;
+}
+
+.ax-tree__guideline {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 10px;
+  width: 2px;
+  z-index: 1;
+
+  mask-repeat: space;
+  mask-size: 100px 100px;
+}
